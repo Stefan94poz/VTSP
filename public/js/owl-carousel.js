@@ -1,0 +1,60 @@
+$(document).ready(function(){
+	$('#main-slider').owlCarousel({
+		items:1,
+		autoHeight:true,
+		autoWidth:false,
+		stagePadding: -10,
+		center:true,
+		loop:true,
+		margin:10,
+		nav:true,
+		autoplay:true,
+		smartSpeed :900,
+		navText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
+		responsive:{
+				0:{
+						items:1
+				},
+				600:{
+						items:1
+				},
+				1000:{
+						items:1
+
+				}
+		}
+})
+$('#slider-banner').owlCarousel({
+	items:5,
+	autoHeight:false,
+	autoWidth:false,
+	center:false,
+	mouseDrag:false,
+	autoplay:false,
+	loop:false,
+	margin:0,
+	nav:false,
+	smartSpeed :900,
+	responsive:{
+			0:{
+					items:1,
+					loop:true,
+					center:true,
+					mouseDrag:true,
+					autoplay:true,
+			},
+			600:{
+					items:3,
+					loop:true,
+					center:true,
+					mouseDrag:true,
+					autoplay:true,
+			},
+			1000:{
+					items:5,
+					loop:false,
+					mouseDrag:false,
+			}
+	}
+})
+});
